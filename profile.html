@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - CENTAUR</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-page">
+        <div class="profile-header">
+            <h1>User Profile</h1>
+        </div>
+        <div class="profile-container">
+            <div class="profile-picture">
+                <img id="profile-img" src="" alt="Profile Picture">
+                <button id="upload-btn">Change Picture</button>
+                <input type="file" id="file-input" accept="image/*" style="display: none;">
+            </div>
+            <div class="profile-details">
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="John Doe">
+                
+                <label for="status">Status:</label>
+                <textarea id="status">Available</textarea>
+                
+                <button id="save-btn">Save Changes</button>
+                <p id="success-message" style="display: none; color: green; margin-top: 10px;">Changes saved successfully!</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

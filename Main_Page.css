@@ -1,0 +1,331 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #ededed;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.sidebar-header {
+    padding: 10px;
+    background-color: #075e54;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.sidebar-header button {
+    padding: 5px 10px;
+    background-color: #25d366;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-bar {
+    padding-right: 50px;
+    padding-left: 25px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+#chat-list li {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#chat-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.chat-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 10px;
+    background-color: #075e54;
+    color: white;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e5ddd5;
+    overflow-y: auto;
+}
+
+.messages p {
+    color: #333;
+}
+
+.message-input {
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.message-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    padding: 10px 15px;
+    background-color: #25d366;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.side_bar {
+    width: 60px;
+    height: 100vh;
+    background-color: #075e54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    margin: 20px 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.menu-item {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #333;
+}
+
+.separator {
+    width: 40px;
+    height: 1px;
+    background-color: #efe3e3;
+    margin: 20px 0;
+}
+
+/* Common styling for all anchors within .anchors */
+.anchors a {
+    display: block;
+    /* Ensures clickable area covers the entire block */
+    text-decoration: none;
+    /* Removes underline from text */
+    color: #ffffff;
+    /* White text */
+    /* background-color: #4CAF50; */
+    /* Green background */
+    padding: 12px 20px;
+    /* Adds space inside the button */
+    font-size: 16px;
+    /* Standard font size */
+    font-weight: bold;
+    /* Makes the text prominent */
+    text-align: center;
+    /* Centers the text */
+    border-radius: 8px;
+    /* Smooth rounded corners */
+    transition: all 0.3s ease;
+    /* Smooth animations for hover effect */
+    margin-bottom: 10px;
+    /* Adds spacing between the links */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Hover effect for all anchor tags */
+.anchors a:hover {
+    background-color: #45a049;
+    /* Darker green for hover */
+    color: #e0e0e0;
+    /* Light gray text */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    /* Enhance shadow */
+}
+
+/* Active state for anchors */
+.anchors a:active {
+    transform: translateY(0);
+    /* Reset lift */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Reduced shadow for pressed effect */
+}
+
+/* Specific styling for the Settings link */
+.settings-menu a {
+    /* background-color: #2196F3; */
+    /* Blue background for Settings */
+    color: #ffffff;
+    /* White text */
+}
+
+/* Hover effect for Settings link */
+.settings-menu a:hover {
+    background-color: #45a049;
+    /* Slightly darker blue */
+}
+
+/* Specific styling for the Profile link */
+.user-profile a {
+    /* background-color: #FF5722; */
+    /* Orange background for Profile */
+    color: #ffffff;
+    /* White text */
+}
+
+/* Hover effect for Profile link */
+.user-profile a:hover {
+    background-color: #45a049;
+    /* Slightly darker orange */
+}
+
+/* New Chat Form */
+.new-chat-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    z-index: 1000;
+}
+
+.new-chat-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.new-chat-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.new-chat-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d4d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-chat-form button:hover {
+    background-color: #006666;
+}
+
+/* Backdrop for New Chat Form */
+.new-chat-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#search-chat {
+    width: calc(100% - 110px);
+    /* Adjust to fit alongside the +New Chat button */
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-chat:focus {
+    border-color: #4caf50;
+    /* Highlight border on focus */
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,99 @@
+/* styles.css for Login Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: url('background.jpg') no-repeat center center fixed; */
+    /* background-image: url(istockphoto-1403848173-612x612.jpg) */
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: white;
+    color: rgb(12, 7, 7);
+    padding: 1rem;
+    text-align: center;
+    background-image: url(istockphoto-1403848173-612x612.jpg);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* margin: 20px;
+    padding: 20px; */
+    background-image: url(istockphoto-1403848173-612x612.jpg);
+}
+
+#content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p.small-text {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+p.small-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p.small-text a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    background-image: url(istockphoto-1403848173-612x612.jpg);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h1>Settings</h1>
+
+        <!-- Change Profile Section -->
+        <div class="settings-section">
+            <h2>Change Profile Picture</h2>
+            <div class="profile-picture">
+                <img src="default-profile.png" alt="Profile Picture" id="profile-img">
+                <input type="file" id="profile-input" accept="image/*">
+            </div>
+            <button id="save-profile-btn">Save</button>
+        </div>
+
+        <!-- Change User ID Section -->
+        <div class="settings-section">
+            <h2>Change User ID</h2>
+            <label for="new-user-id">New User ID:</label>
+            <input type="text" id="new-user-id" placeholder="Enter new user ID">
+            <button id="save-user-id-btn">Save</button>
+        </div>
+
+        <!-- Change Password Section -->
+        <div class="settings-section">
+            <h2>Change Password</h2>
+            <label for="current-password">Current Password:</label>
+            <input type="password" id="current-password" placeholder="Enter current password">
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" placeholder="Enter new password">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" placeholder="Confirm new password">
+            <button id="save-password-btn">Save</button>
+        </div>
+
+        <!-- Other Settings -->
+        <div class="settings-section">
+            <h2>Other Settings</h2>
+            <ul>
+                <li><button id="notifications-btn">Enable/Disable Notifications</button></li>
+                <li><button id="privacy-btn">Privacy Settings</button></li>
+                <li><button id="logout-btn">Logout</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>
